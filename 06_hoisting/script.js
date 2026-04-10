@@ -11,7 +11,7 @@ var a = 10;
 
 // const: Same like let
 
-console.log(b);
+//console.log(b); //this will give error
 let b = 10;
 
 // function: Below one will be treated as like var is hoisted
@@ -22,3 +22,14 @@ function hello(){
 }
 
 
+// if function is assigned to variable  
+
+//hey();  //(var - hoisted : will give error as hey is not a function)
+var hey = function hi(){
+    console.log("hi");
+}
+
+//hel(); //(let or const - TDZ: will give error hel is not assigned)
+let hel = function hi(){
+    console.log("hi");
+}
