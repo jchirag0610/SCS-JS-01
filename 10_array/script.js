@@ -1,0 +1,1 @@
+//Array: collection of element - in js multiple type of values can be stored as a collection unlike other language
