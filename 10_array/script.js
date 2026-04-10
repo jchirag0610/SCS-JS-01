@@ -52,8 +52,8 @@ console.log(ar);
 console.log(ar.reverse());
 
 //sort
-console.log(ar.sort( (a,b) => a-b ));  //ascending
-console.log(ar.sort( (a,b) => b-a ));  //descending
+console.log(ar.sort((a, b) => a - b));  //ascending
+console.log(ar.sort((a, b) => b - a));  //descending
 
 
 //join: joins array element using a string here I've used ,
@@ -61,3 +61,17 @@ console.log(fruits.join(", "));
 
 //toString
 console.log(arr.toString());
+
+
+
+//Array Iteration using simple for loop
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+//Array Iteration using simple foreach loop
+
+arr.forEach((num) => {
+    console.log(num);
+})
