@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Types</title>
 </head>
+
 <body>
+    <!-- If neither async or defer is present: The script is downloaded and executed immediately, blocking parsing until the script is completed -->
     <script src="script.js"></script>
+
+    <!-- If defer is present (and not async): The script is downloaded in parallel to parsing the page, and executed after the page has finished parsing -->
+    <!-- <script defer src="script.js"></script> -->
+
+    <!-- If async is present: The script is downloaded in parallel to parsing the page, and executed as soon as it is available (before parsing completes) -->
+    <!-- <script async src="script.js"></script> -->
 </body>
+
 </html>
